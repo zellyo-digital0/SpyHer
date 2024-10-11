@@ -1,0 +1,425 @@
+$font: 'Plus Jakarta Sans', sans-serif;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+$color-3d3d3d: #3d3d3d;
+$color-fff: #fff;
+$color-111111: #111111;
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400;
+  position: relative;
+  color: #3d3d3d;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  display: inline-block;
+  transition: all ease 0.6s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+small {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+/* media style */
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.container {
+  max-width: 1274px;
+}
+
+/*==== sticky-nev start=== */
+/* Styling for the preloader */
+.wrapp {
+  background-image: url(../img/header-image-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  header {
+    padding: 80px 0 28px 0;
+    a {
+      max-width: 160px;
+    }
+  }
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      text-transform: uppercase !important;
+      font-weight: 800;
+      color: white;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: #efefef;
+      font-size: 18.5px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 798px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a {
+      background: linear-gradient(84.31deg, #28e1d6 3.5%, #1056fa 80.31%);
+      color: white;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 15px 22.5px;
+      margin-top: 2rem;
+      font-size: 18.5px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+  }
+}
+// imgWrapp start
+.imgWrapp {
+  background-color: #f5f9ff !important;
+  padding-bottom: 85px;
+  padding-top: 153px;
+  img {
+  }
+}
+.services {
+  padding-bottom: 84px;
+  background-color: #f5f9ff !important;
+  .item {
+    .d-flex {
+      color: #2860e1;
+      font-size: 25px;
+      margin-top: 2rem;
+      gap: 1.5rem;
+      margin-bottom: 20px;
+      i {
+        align-self: center;
+      }
+      span {
+        align-self: center;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      max-width: 85%;
+      font-size: 18px;
+      color: #585858;
+      line-height: 1.6;
+    }
+  }
+}
+// TapInto start
+.TapInto {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  &::after {
+    content: '';
+    width: 85%;
+    height: 365px;
+    background: linear-gradient(84.31deg, #28e1d6 3.5%, #1056fa 80.31%);
+    position: absolute;
+    z-index: 1;
+    right: -12px;
+    margin-top: 24px;
+    border-radius: 12px;
+    bottom: 0px;
+    z-index: -1;
+  }
+  &.StartSpying {
+    &::after {
+      right: auto;
+      left: -12px;
+      height: 300px;
+      margin-top: -27px;
+    }
+  }
+  .TapIntoText {
+    padding-bottom: 90px;
+    text-align: center;
+    h2 {
+      color: #031c5b !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+      font-weight: 700;
+      font-size: 47px;
+      text-rendering: optimizeLegibility;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      max-width: 885px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      font-size: 18px;
+      color: #585858;
+      max-width: 800px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+  .TapIntoImg {
+    img {
+      width: 825px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+// TapInto end
+// HearFrom start
+.HearFromTop {
+  padding-bottom: 95px;
+  text-align: center;
+  h2 {
+    text-align: center;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    font-weight: 700;
+    color: #031c5b !important;
+    font-size: 47px;
+  }
+  p {
+    font-size: 1.85rem;
+    color: #585858;
+    margin-bottom: 0;
+  }
+}
+.HearFrom {
+  padding: 95px 0;
+  background-color: #f9f9f9 !important;
+  .SliderWrapp {
+    .sliderItem {
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+      border-radius: 12px;
+      background: white !important;
+      height: auto;
+      display: block;
+      padding: 1.5rem;
+      margin: 0 15px;
+      ul {
+        margin-top: 17px;
+        li {
+          i {
+            color: gold;
+          }
+        }
+      }
+      h4 {
+        text-align: center;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        font-size: 20px;
+        margin-bottom: 0;
+        margin: 15px 0 8px;
+        padding: 0px;
+        line-height: 1.25;
+        color: #2550ea;
+      }
+      p {
+        padding: 20px;
+        margin-bottom: 0;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666666;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #2550ea;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .slick-dots {
+    bottom: -50px;
+  }
+}
+// HearFrom end
+// TapInto start
+.TapIntoLargest {
+  padding-bottom: 130px;
+  h4 {
+    color: #222222;
+    text-align: center;
+    letter-spacing: 0 !important;
+    line-height: 1.3;
+    text-transform: none !important;
+    font-weight: 700;
+    font-size: 32px;
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    background: linear-gradient(84.31deg, #28e1d6 3.5%, #1056fa 80.31%);
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 15px 22.5px;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 18px;
+  }
+}
+// footer start
+footer {
+  text-align: center;
+  background: linear-gradient(89.86deg, #1f2e54 -57.34%, #1e2237 99.88%);
+  padding: 40px 0;
+  a {
+    img {
+      width: 200px;
+    }
+  }
+  p {
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+}
+
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 2100px) {
+}
+
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 1700px) and (max-width: 2099.98px) {
+}
+
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 1440px) and (max-width: 1699.98px) {
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 1000px) {
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px) {
+  .wrapp .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .TapInto .TapIntoText h2 {
+    font-size: 34px;
+  }
+  .wrapp .banner h1 {
+    font-size: 2rem;
+  }
+  .services .item p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .wrapp .banner p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .imgWrapp {
+    padding-bottom: 40px;
+    padding-top: 80px;
+  }
+  .TapInto::after {
+    height: 190px;
+  }
+  .TapInto.StartSpying::after {
+    height: 120px;
+  }
+  .TapIntoLargest h4,
+  .TapIntoLargest .h4 {
+    font-size: 26px;
+  }
+  .HearFromTop p {
+    font-size: 1rem;
+  }
+  .HearFromTop h2 {
+    font-size: 34px;
+  }
+  .HearFromTop {
+    padding-bottom: 40px;
+  }
+  .wrapp .banner {
+    padding-top: 30px;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 414px)*/
+@media (max-width: 414px) {
+}
+
+/*Extra small devices (portrait phones, less than 375px)*/
+@media (max-width: 375px) {
+}
+
+/*Extra small devices (portrait phones, less than 360px)*/
+@media (max-width: 360px) {
+}
+
+/*Extra small devices (portrait phones, less than 320px)*/
+@media (max-width: 320px) {
+}
